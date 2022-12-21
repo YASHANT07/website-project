@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-width,initial-scale-1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - RedStore</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+
+</head>
+<body>
+    
+     <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo2-removebg-preview.png" alt="" width="120px" ></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="About us.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" alt="" width="30px" height="30px"></a>
+            <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+        </div>
+        
+        </div>
+ 
+    <!-- about page -->
+    <section class="about">
+        <div class="content">
+            <img src="images/acc.png" alt="">
+            <div class="text">
+                <h1>About Us</h1>
+                <h5>Juices and Drinks</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, eum magnam assumenda culpa dolor quae, ad temporibus ab dolorum adipisci amet delectus placeat porro necessitatibus tempora, quibusdam illo! Aperiam, iste!Lorem
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta doloremque minima nisi quo cupiditate eligendi, quis eaque nobis! Omnis distinctio, unde earum reprehenderit molestias tenetur at ab tempora ipsam cum.
+                </p>
+                <button type="button">Know More</button>
+            </div>
+        </div>
+
+    </section>
+
+<!-- footer -->
+<!-- <div class="SectionOne" id="section1">
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>youtube</li>
+                    </ul>
+                </div>
+            </div> -->
+            
+        </div>
+    </div>
+    </div>
+<!-- js for toggle menu -->
+ <script>
+var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px")
+        {
+            MenuItems.style.maxHeight="200px";
+        }
+        else{
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+
+    
+
+ </script>
+ <!-- js for toggle form -->
+ <script>
+var LoginForm = document.getElementById("LoginForm");
+var RegForm = document.getElementById("RegForm");
+var Indicator = document.getElementById("Indicator");
+
+function register(){
+    RegForm.style.transform = "translate(0px)";
+    LoginForm.style.transform = "translate(0px)";
+    Indicator.style.transform = "translate(100px)";
+}
+
+function login(){
+    RegForm.style.transform = "translate(300px)";
+    LoginForm.style.transform = "translate(300px)";
+    Indicator.style.transform = "translate(0px)";
+}
+
+
+ </script>
+</body>
+</html>
